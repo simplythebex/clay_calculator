@@ -49,18 +49,18 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="#"
+          href="https://www.linkedin.com/in/bex-jones/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="/instagram.svg"
+            src="/linkedin.svg"
             alt="Window icon"
             width={16}
             height={16}
           />
-          Instagram
+          LinkedIn
         </a>
       </footer>
     </div>
