@@ -19,27 +19,18 @@
   }
 }
 
+header {
+  background: var(--button)
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Chewy;
 }
 
-h2 {
-  font-size: 50px;
-}
-
 p {
   font-size: 20px;
-}
-
-a {
-  background: var(--button);
-}
-
-a:hover {
-  background: var(--button-hover);
-  color: #ffffff;
 }
 
 input {
