@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function Home() {
   const [desiredSize, setDesiredSize] = useState<number | "">("");
@@ -20,17 +21,16 @@ export default function Home() {
     <div className="min-h-screen">
       <header className="sticky">
         <nav className="min-w-screen mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-5">
-          <a href="/"><Image aria-hidden src="/cat-logo.svg" alt="clay calculator icon" width={35} height={35} /></a>
+          <Link href=""><Image aria-hidden src="/cat-logo.svg" alt="clay calculator icon" width={35} height={35} /></Link>
         </nav>
       </header>
 
       <div className="grid grid-rows-[10px_1fr_10px] items-center justify-items-center sm:p-20 min-h-full">
         <main className="min-h-screen overflow-y-scroll flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <div className="flex items-center">
-            <h2 className="sm:text-[50px] text-[25px]">we do the maths, so that you don’t have to</h2>
-          </div>
-          <div>
-            <p>First, tell us your desired dimensions and clay details...</p>
+          <div className="flex items-center flex-col">
+            <h2 className="sm:text-[50px] text-[25px]">Clay Shrinkage Calculator</h2>
+            <p>we do the maths, so that you don't have to</p>
+            <p className="pt-8">First, tell us your desired dimensions and clay details...</p>
           </div>
 
           {/* Form */}
