@@ -29,7 +29,6 @@ export default function Home() {
         <main className="min-h-screen overflow-y-scroll flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <div className="flex items-center flex-col">
             <h2 className="sm:text-[50px] text-[25px]">Clay Shrinkage Calculator</h2>
-            <p>we do the maths, so that you don't have to</p>
             <p className="pt-8">First, tell us your desired dimensions and clay details...</p>
           </div>
 
