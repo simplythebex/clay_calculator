@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-chewy: var(--font-chewy);
+}
+
+:root {
+  --background: #FFE5D9;
+  --foreground: #746065;
+  --button: #D8E2DC;
+  --button-hover: #8bb7a0;
+  --input: #FFCAD4;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #FFE5D9;
+    --foreground: #9D8189;
+  }
+}
+
+header {
+  background: var(--button)
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Chewy;
+}
+
+p {
+  font-size: 20px;
+}
+
+input {
+  background: var(--input);
+  color: var(--foreground);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 1em #00000013
+}
