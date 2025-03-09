@@ -15,8 +15,8 @@ export default function Home() {
 
     if (desiredWidth === "" || desiredHeight === "" || shrinkagePercentage === "") return;
 
-    const calculatedWidth = (desiredWidth / (1 - shrinkagePercentage / 100)).toFixed(1);
-    const calculatedHeight = (desiredHeight / (1 - shrinkagePercentage / 100)).toFixed(1);
+    const calculatedWidth = parseInt((desiredWidth / (1 - shrinkagePercentage / 100)).toFixed(1));
+    const calculatedHeight = parseInt((desiredHeight / (1 - shrinkagePercentage / 100)).toFixed(1));
 
     setResult({
       width: calculatedWidth,
