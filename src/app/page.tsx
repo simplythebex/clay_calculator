@@ -6,7 +6,6 @@ import Link from 'next/link'
 export default function Home() {
   const [desiredWidth, setDesiredWidth] = useState<number | "">("");
   const [desiredHeight, setDesiredHeight] = useState<number | "">("");
-  const [desiredDepth, setDesiredDepth] = useState<number | "">("");
   const [shrinkagePercentage, setShrinkagePercentage] = useState<number | "">("");
   const [result, setResult] = useState<{ width: number; height: number;} | null>(null);
 
